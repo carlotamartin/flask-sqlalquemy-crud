@@ -7,7 +7,7 @@ contacts = Blueprint ('contacts', __name__)
 #En las rutas, se pueden devolver tanto un string como un html
 @contacts.route('/')
 def home():
-    return 'Hello, world'
+    return '<h1>contacts list </h1>'
 
 
 @contacts.route('/new')
