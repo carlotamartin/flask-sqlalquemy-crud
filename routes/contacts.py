@@ -10,10 +10,19 @@ contacts = Blueprint ('contacts', __name__)
 def home():
     return render_template('index.html')
 
-
 @contacts.route('/new')
 def add_contact():
     return 'saving a contact'
+
+#Crearemos esta ruta para cuando la aplicación añada un contacto
+@contacts.route('/update')
+def update_contact():
+    return 'update a contact'
+
+#Crearemos esta ruta para cuando la aplicación elimine un contacto
+@contacts.route('/delete')
+def delete_contact():
+    return 'delete a contact'
 
 @contacts.route('/abaut')
 def abaut():
